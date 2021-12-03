@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TP.Core.Interfaces.Services;
 
 namespace TP.WebAPI.Controllers
 {
@@ -11,5 +12,11 @@ namespace TP.WebAPI.Controllers
     [ApiController]
     public class CompanyController : ControllerBase
     {
+        private readonly ICompanyService companyService;
+
+        public CompanyController(ICompanyService companyService)
+        {
+            this.companyService = companyService;
+        }
     }
 }

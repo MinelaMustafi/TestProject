@@ -1,0 +1,6 @@
+Impelement EF Core Context and DbSets in the TP.Infrastructure
+Implement ICompanyRepository in TP.Infrastructure.Repositories.EFCore
+Implement ICompanyService in TP.Infrastructure.Services
+Implement CompanyController CRUD operations (all logic goes to ICompanyService)
+CompanyController never returns the subcollections of the company (ViewModel)
+Implement VehicleController, DriverController and operations to add, update and remove them from company

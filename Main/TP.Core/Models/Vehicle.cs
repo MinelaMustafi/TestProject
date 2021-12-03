@@ -6,6 +6,5 @@ namespace TP.Core.Models
     {
         public string ID { get; set; }
         public string Name { get; set; }
-        public ICollection<Driver> Drivers { get; set; }
     }
 }
