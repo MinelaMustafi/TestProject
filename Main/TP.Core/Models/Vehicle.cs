@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace TP.Core.Models
 {
-    public class Vehicle
+    public class Vehicle : BaseClass
     {
-        public string ID { get; set; }
+        [Description("Required")]
         public string Name { get; set; }
+        [Description("Required")]
+        public virtual Company Company { get; set; }
     }
 }
